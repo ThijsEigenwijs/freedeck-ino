@@ -22,6 +22,9 @@
 #include "HID-Project.h"
 #include "settings.h"
 
+#define BUTTON_UP 1
+#define BUTTON_DOWN 0
+
 // setting a port instruction takes 1 clock cycle
 #define I2C_CLK_LOW() I2CPORT = bOld
 #define FILL_BUFFER() while (!Serial.available())
